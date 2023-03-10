@@ -106,6 +106,7 @@ Markdoc comes with a way to include other documents into another.
 # Resources
 {% partial file="users-resource.md" /%}
 {% partial file="user-resource.md" /%}
+
 # Schemas
 {% partial file="user-schema.md" /%}
 ```
@@ -168,7 +169,7 @@ OpenAPI provides `x-*` for extending the API description. This could use a speci
 <!-- Markdoc allows for any JSON for attribute values -->
 {% extend 
    name="amazon-apigateway-any-method" 
-   value={foo: "bar" /%}
+   value={foo: "bar"} /%}
 ```
 
 ## Tradeoffs
